@@ -1,0 +1,306 @@
+<!-- dingban_english_coach_assistant/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>鼎伴学华中区英语伴学基础流程</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.loli.net/css?family=Noto+Sans+SC:400,500,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .tab-active {
+      border-bottom: 3px solid #3b82f6;
+      color: #3b82f6;
+      font-weight: 500;
+    }
+    .process-card {
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .process-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div id="particles-js"></div>
+  <div class="container mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2">鼎伴学华中区英语伴学基础流程</h1>
+      <p class="text-xl text-gray-600">VIP英语教练全流程工作概况</p>
+    </header>
+
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+      <div class="flex border-b">
+        <button class="tab-btn py-4 px-6 text-lg font-medium text-gray-500 hover:text-blue-500 focus:outline-none" data-tab="pre-class">课前准备</button>
+        <button class="tab-btn py-4 px-6 text-lg font-medium text-gray-500 hover:text-blue-500 focus:outline-none" data-tab="in-class">上课中</button>
+        <button class="tab-btn py-4 px-6 text-lg font-medium text-gray-500 hover:text-blue-500 focus:outline-none" data-tab="after-class">课后30分钟</button>
+        <button class="tab-btn py-4 px-6 text-lg font-medium text-gray-500 hover:text-blue-500 focus:outline-none" data-tab="follow-up">持续跟进</button>
+        <button class="tab-btn py-4 px-6 text-lg font-medium text-gray-500 hover:text-blue-500 focus:outline-none" data-tab="notes">注意事项</button>
+      </div>
+
+      <div class="p-6">
+        <!-- 课前准备 -->
+        <div id="pre-class" class="tab-content hidden">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">课前准备 (T-6h～T-0)</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="process-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 进群&打招呼</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 修改群备注: 英语教练-XX教练</li>
+                <li>• 与家长确认固定上课时间</li>
+                <li>• 关闭群聊可加好友</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">查看话术模板</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 账号检查</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 登录小程序检查词库和学生名字</li>
+                <li>• 登录校区账号</li>
+                <li>• 登录学生个人账号</li>
+                <li>• 确认能正常进入后台</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">验证账号</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 设备与环境自检</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 设置虚拟背景</li>
+                <li>• 检查网络和电源</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg">完成检查</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 课前准备</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 上课前6小时发送腾讯会议链接</li>
+                <li>• 重命名为"学生姓名+鼎伴学VIP英语课"</li>
+                <li>• 会议号示例：154-827-659</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">发送会议链接</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 上课中 -->
+        <div id="in-class" class="tab-content hidden">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">上课中 (T=0)</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="process-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 准时上课</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 提前5-10分钟入会</li>
+                <li>• 5分钟后未见学生: 语音通话</li>
+                <li>• 仍找不到: 联系组长/宋老师</li>
+              </ul>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 课堂结构</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 先复习上一轮单词</li>
+                <li>• 再学新词(30-45个/轮)</li>
+                <li>• 1小时课新词≥25个（视学生具体情况变动）</li>
+              </ul>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 教学规范</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 不解释单词</li>
+                <li>• 只做发音、拼写指导</li>
+                <li>• 学后检测提交后才可选新词</li>
+              </ul>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">4. 下课前准备</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 打印当日单词表</li>
+                <li>• 保存PDF/截图</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">打印单词表</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 课后30分钟 -->
+        <div id="after-class" class="tab-content hidden">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">课后30分钟内</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="process-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 学生群反馈</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 今日单词表PDF/图片</li>
+                <li>• 课堂反馈模板</li>
+                <li>• 21天抗遗忘复习参考</li>
+                <li>• 复习提醒设置</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">一键发送反馈</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 个人组群登记</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 填写《课时登记表》</li>
+                <li>• 更新《抗遗忘复习表》</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">登记课时</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 持续跟进 -->
+        <div id="follow-up" class="tab-content hidden">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">持续跟进 (当天～第21天)</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="process-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">1. 每日提醒 & 打卡</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 按表格日期提醒</li>
+                <li>• 24小时内纠音反馈</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">设置提醒</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">2. 阶段性检测</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 每10课时测试一次</li>
+                <li>• 结课时测试</li>
+                <li>• 结果PDF发给组长</li>
+              </ul>
+              <div class="mt-4">
+                <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">生成测试</button>
+              </div>
+            </div>
+
+            <div class="process-card bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">3. 课程临近结束</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• 提前2-3课时提醒</li>
+                <li>• 确认是否续费</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 注意事项 -->
+        <div id="notes" class="tab-content hidden">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">注意事项速查表</h2>
+          <div class="space-y-4">
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+              <h3 class="text-lg font-semibold text-red-800">好友申请限制</h3>
+              <p class="text-gray-700">不能通过任何鼎伴学相关人员的微信好友申请(可加的只有学管宋元钦和自己的组长)</p>
+            </div>
+
+            <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+              <h3 class="text-lg font-semibold text-yellow-800">迟到/旷课处理</h3>
+              <p class="text-gray-700">第一次谈话→第二次按正常时间上下课并记录</p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+              <h3 class="text-lg font-semibold text-blue-800">异常情况处理</h3>
+              <p class="text-gray-700">任何异常(账号、网络、家长投诉)→先手机联系组长或宋老师</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-gray-600 mt-12">
+      <p>© 2025 鼎伴学英语教练助手 - 版本 1.0.0</p>
+    </footer>
+  </div>
+
+  <script>
+    // 初始化粒子效果
+    document.addEventListener('DOMContentLoaded', function() {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#3b82f6" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5, random: true },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" }
+          }
+        }
+      });
+
+      // 标签页切换
+      const tabs = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // 移除所有active类
+          tabs.forEach(t => t.classList.remove('tab-active'));
+          tabContents.forEach(c => c.classList.add('hidden'));
+          
+          // 添加active类到当前标签
+          tab.classList.add('tab-active');
+          
+          // 显示对应内容
+          const tabId = tab.getAttribute('data-tab');
+          document.getElementById(tabId).classList.remove('hidden');
+        });
+      });
+
+      // 默认显示第一个标签
+      tabs[0].classList.add('tab-active');
+      tabContents[0].classList.remove('hidden');
+    });
+
+    // 本地存储功能
+    function saveProgress(stage, data) {
+      localStorage.setItem(`dingban_${stage}`, JSON.stringify(data));
+    }
+
+    function loadProgress(stage) {
+      const data = localStorage.getItem(`dingban_${stage}`);
+      return data ? JSON.parse(data) : null;
+    }
+  </script>
+</body>
+</html>
+
